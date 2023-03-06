@@ -1,7 +1,7 @@
 import os
 import openai
 
-openai.api_key = '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'
+openai.api_key = os.environ['OPENAI_API_KEY']
 
 def generate_response(prompt):
     response = openai.ChatCompletion.create(
