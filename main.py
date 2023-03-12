@@ -1,6 +1,11 @@
 import os
 import openai
 
+# TARS text-to-speech
+from resemble import Resemble
+
+Resemble.api_key("YOUR_API_TOKEN")
+
 openai.api_key = os.environ['OPENAI_API_KEY']
 
 def generate_response(prompt):
